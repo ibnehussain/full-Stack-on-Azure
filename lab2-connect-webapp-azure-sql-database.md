@@ -20,6 +20,19 @@ Your web application needs to store and retrieve data from a managed relational 
 
 ---
 
+## Quick Start (Optional)
+If you want to get started quickly with a sample application, you can clone this repository:
+
+```bash
+git clone https://github.com/ibnehussain/accapp001.git
+```
+
+This repository contains a pre-configured .NET application that you can use as a starting point for this lab.
+
+> **Note:** After cloning, you'll still need to follow the steps below to configure the database connection for your specific Azure resources.
+
+---
+
 ## Steps
 
 ### Step 1: Verify Azure SQL Database
