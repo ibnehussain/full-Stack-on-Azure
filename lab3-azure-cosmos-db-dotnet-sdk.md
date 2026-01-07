@@ -5,6 +5,7 @@
 ## Create Azure Cosmos DB & Perform CRUD Using .NET SDK
 
 ### 🎯 Lab Objective
+
 By the end of this lab, learners will be able to:
 
 - Create an **Azure Cosmos DB (SQL API)** account
