@@ -5,7 +5,6 @@
 ## Create Azure Cosmos DB & Perform CRUD Using .NET SDK
 
 ### 🎯 Lab Objective
-
 By the end of this lab, learners will be able to:
 
 - Create an **Azure Cosmos DB (SQL API)** account
@@ -104,14 +103,28 @@ Cosmos DB (SQL API)
 
 ## STEP 4️⃣ – Create .NET Console Application
 
-### Using Visual Studio
+### Using VS Code
 
-1. Create **Console App**
-2. Framework: **.NET 8**
-3. Project Name: `CosmosCrudDemo`
+1. Open **VS Code**.
+2. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac) to open the Command Palette.
+3. Type `> .NET: Generate Assets for Build and Debug` and select it.
+4. Create a new folder for your project and open it in VS Code.
+5. Open the integrated terminal (`Ctrl+``) and run the following command to create a new console application:
+
+   ```bash
+   dotnet new console -n CosmosCrudDemo
+   ```
+
+6. Navigate to the newly created project folder:
+
+   ```bash
+   cd CosmosCrudDemo
+   ```
+
+7. Open the `Program.cs` file to start coding.
 
 > **Why this step?**
-> A console app is a simple way to interact with Cosmos DB using the .NET SDK.
+> VS Code provides a lightweight and flexible environment for developing .NET applications.
 
 ---
 
