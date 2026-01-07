@@ -8,28 +8,28 @@
 
 By the end of this lab, learners will be able to:
 
-* Create an **Azure Cosmos DB (SQL API)** account
-* Create a **Database and Container**
-* Use the **.NET SDK** to perform **Create, Read, Update, Delete (CRUD)** operations
-* Understand **partition keys** in practice
-* Implement **error handling** and **best practices**
-* Perform **advanced queries** and **pagination**
+- Create an **Azure Cosmos DB (SQL API)** account
+- Create a **Database and Container**
+- Use the **.NET SDK** to perform **Create, Read, Update, Delete (CRUD)** operations
+- Understand **partition keys** in practice
+- Implement **error handling** and **best practices**
+- Perform **advanced queries** and **pagination**
 
 ---
 
 ## 🧰 Prerequisites
 
-* Azure Subscription
-* Visual Studio 2022 (or VS Code)
-* .NET 8 SDK installed
-* Basic C# knowledge
-* Familiarity with Azure Portal
+- Azure Subscription
+- Visual Studio 2022 (or VS Code)
+- .NET 8 SDK installed
+- Basic C# knowledge
+- Familiarity with Azure Portal
 
 ---
 
 ## 🧩 Architecture Overview
 
-```
+```plaintext
 .NET Console App
      |
      v
@@ -58,7 +58,7 @@ Cosmos DB (SQL API)
 | --------------- | ----------------------- |
 | Account Name    | cosmoslab<unique>       |
 | API             | NoSQL                   |
-| Location        | Any Region 
+| Location        | Any Region              |
 | Capacity mode   | Provisioned throughput  |
 | Apply Free Tier | No                      |
 
@@ -77,13 +77,13 @@ Cosmos DB (SQL API)
 2. Go to **Data Explorer**
 3. Click **New Database**
 
-   * Database Name: `EmployeeDB`
-   * Throughput: `400 RU/s`
+   - Database Name: `EmployeeDB`
+   - Throughput: `400 RU/s`
 4. Click **New Container**
 
-   * Container Name: `Employees`
-   * Partition Key: `/department`
-   * Throughput: `400 RU/s`
+   - Container Name: `Employees`
+   - Partition Key: `/department`
+   - Throughput: `400 RU/s`
 
 > **Why this step?**
 > Partition keys ensure data distribution and scalability. Choosing `/department` as the partition key helps group related data.
@@ -95,8 +95,8 @@ Cosmos DB (SQL API)
 1. Go to **Settings → Keys**
 2. Copy:
 
-   * **URI**
-   * **Primary Key**
+   - **URI**
+   - **Primary Key**
 
 📌 You will use these in your .NET app.
 
@@ -286,11 +286,12 @@ while (query.HasMoreResults)
 
 # 🧠 Key Learning Points
 
-* Partition key **must be supplied** for Read/Update/Delete
-* Cosmos DB is **schema-less**
-* RU/s affects performance & cost
-* SDK handles JSON serialization automatically
-* Exception handling ensures reliability
+- Partition key **must be supplied** for Read/Update/Delete
+- Cosmos DB is **schema-less**
+- RU/s affects performance & cost
+- SDK handles JSON serialization automatically
+- Exception handling ensures reliability
+
 For detailed guidance on using the Azure Cosmos DB .NET SDK, including advanced features, best practices, and troubleshooting tips, visit the official documentation:
 https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-dotnet-v3
 
@@ -298,9 +299,9 @@ https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-dotnet-v3
 
 ## 🧪 Optional Challenges
 
-* Convert app to **ASP.NET Web API**
-* Use **Managed Identity** for authentication
-* Implement **retry policies** for transient errors
+- Convert app to **ASP.NET Web API**
+- Use **Managed Identity** for authentication
+- Implement **retry policies** for transient errors
 
 ---
 
