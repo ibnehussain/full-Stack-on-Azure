@@ -4,16 +4,14 @@
 
 ## Create Azure Cosmos DB & Perform CRUD Using .NET SDK
 
-### 🎯 Lab Objective
+### 🎯 By the end of this lab, learners will be able to:
 
-By the end of this lab, learners will be able to:
-
-- Create an **Azure Cosmos DB (SQL API)** account
-- Create a **Database and Container**
-- Use the **.NET SDK** to perform **Create, Read, Update, Delete (CRUD)** operations
-- Understand **partition keys** in practice
-- Implement **error handling** and **best practices**
-- Perform **advanced queries** and **pagination**
+1. Create an **Azure Cosmos DB (SQL API)** account  
+2. Create a **Database and Container**  
+3. Use the **.NET SDK** to perform **Create, Read, Update, Delete (CRUD)** operations  
+4. Understand **partition keys** in practice  
+5. Implement **error handling** and **best practices**  
+6. Perform **advanced queries** and **pagination**  
 
 ---
 
